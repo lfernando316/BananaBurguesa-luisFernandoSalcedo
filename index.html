@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Banana Buguesa</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container_area">
+      <header class="barnav sticky-top">
+        <nav class="navbar navbar-dark navbar-expand-lg barnav">
+          <div class="container-fluid">
+            <a class="navbar-brand p-0" href="./index.html">
+              <img src="./assets/img/logo.png" alt="logo restaurante" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">Contaco</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="carrusel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/img/carrusel1.jpg"
+                class="d-block w-100 imgcarrusel"
+                alt="hamburguesa con queso"
+              />
+              <div class="carousel-caption d-md-block">
+                <h1>Banana Burguesa</h1>
+                <h2>la esquina más brutal de la ciudad</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/img/carrusel2.jpg"
+                class="d-block w-100 imgcarrusel"
+                alt="plato hamburguesa"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/img/carrusel3.jpg"
+                class="d-block w-100 imgcarrusel"
+                alt="hamburguesa al carbon"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="presentacion">
+        <div class="caja_texto">
+          <p>
+            Hacemos del plátano una experiencia brutal Somos el único
+            restaurante de la ciudad que toma el plátano como ingrediente
+            principal y le da la variedad y sabor para vivir una experiencia
+            única al momento de comer. Sumado a Hamburguesas Artesanales
+          </p>
+        </div>
+        <div class="caja_img">
+          <img
+            src="./assets/img/fotopresentacion.jpg"
+            alt="imagen hamburguesa"
+          />
+        </div>
+      </section>
+
+      <section class="reservacion">
+        <div>
+          <h2>
+            ¿Tienes un evento? <br />
+            Reserva con nosotros
+          </h2>
+          <a href="./pages/reserva.html" target="_blank">
+            <input class="boton" type="button" value="Reserva aquí" />
+          </a>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer_container">
+          <div class="footer_redes">
+            <p>siguenos en nuestras redes</p>
+            <div>
+              <a
+                href="https://www.facebook.com/bananaburguesa/"
+                target="_blank"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.instagram.com/bananaburguesa/?hl=es"
+                target="_blank"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer_contac">
+            <p>
+              <i class="bi bi-geo-alt-fill"></i> Carrera 30 #18 esquina <br />
+              Barrio San Alonso<br />
+              <i class="bi bi-whatsapp"></i> Whatsapp 3103656718
+            </p>
+          </div>
+        </div>
+        <div class="footer_copy">© 2022 Copyright: Lfernando316</div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
