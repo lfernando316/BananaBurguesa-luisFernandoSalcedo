@@ -30,7 +30,6 @@ header img{
     padding: 0px;
 }
 
-
 .barnav ul li a{
     background-color: #4b4b4b;
     color: beige;
@@ -43,11 +42,16 @@ header img{
     color: #fff200;
 } 
 
+.navbar-toggler {
+    color: #4b4b4b;
+}
 
+.iconlist{
+    color: #4b4b4b;
+}
 
 .carrusel{
     grid-area: carrusel;
-    background-color: lightcoral;
     height: 500px;
 }
 
@@ -73,7 +77,6 @@ header img{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .presentacion{
     grid-area: presentacion;
     margin-top: 10px;
@@ -85,8 +88,6 @@ header img{
     height: 400px;
     width: auto;
 }
-
-
 
 .presentacion .caja_texto {
     width: 50%;
@@ -102,7 +103,6 @@ header img{
     color: white;
 }
 
-
 .presentacion .caja_img img{
     width: 300px;
     height: 400px;
@@ -111,9 +111,6 @@ header img{
     border: #4b4b4b solid 2px;
 }
 
-
-
-
 .reservacion{
     grid-area: reservacion;
     margin: 10px;
@@ -121,7 +118,6 @@ header img{
     height: auto;
     display: flex;
     justify-content: center;
-    
 }
 
 .reservacion div{
@@ -140,6 +136,58 @@ header img{
     font-size: 46px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 576px){
+    .carrusel{
+        grid-area: carrusel;
+        background-color: lightcoral;
+        height: 500px;
+    }
+    
+    .carrusel{
+        width: 100%;
+        height: 60%;
+    }
+    
+    .imgcarrusel{
+        width: 500px;
+        height: 500px;
+    }
+    
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 10.25rem;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+        
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+          
+    .presentacion .caja_texto {
+        margin-bottom: 10px;
+    }
+    
+    .reservacion div{
+        width: auto;
+        height: auto;
+    }
+    
+    .reservacion div h2{
+        font-size: 46px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }
 
 .boton{
@@ -301,10 +349,47 @@ header img{
 .seccion_dos{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: start;
+    margin-top: 0px;
     width: 500px
+}
+
+.seccion_dos iframe{
+    width: 500px;
+    height:400px
+}
+
+@media (max-width: 576px){
+    .seccion_uno{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion_uno p{
+        margin-top: 10px;
+    }
+
+     .seccion_uno img{
+        width: 300px;
+        height: 300px;
+     }
+
+    .seccion_dos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .seccion_dos iframe{
+        width: 400px;
+        height:400px
+    }
 }
 
 .container_contacto{
@@ -334,6 +419,21 @@ header img{
 
 }
 
+.mapa iframe{
+    width: 600px;
+    height: 450px
+}
+
+@media (max-width: 576px) {
+    .mapa{
+        margin-top: 15px;
+    }
+
+    .mapa iframe{
+        width: 350px;
+        height: 350px
+    }
+}
 .container_reserva{
     display: grid;
     grid-template-areas: 
@@ -350,4 +450,10 @@ header img{
     justify-content: center;
     align-items: center;
     margin: 10px;
+}
+
+@media (max-width: 576px) {
+    .formulario{
+        width: 400px;
+    }  
 }
