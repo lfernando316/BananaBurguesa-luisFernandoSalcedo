@@ -5,11 +5,7 @@
   font-family: sans-serif;
 }
 
-:root {
-  --color-fondo-boton: #4b4b4b;
-  --color-font: #fff200;
-}
-
+/* variables */
 .container_area {
   display: grid;
   grid-template-areas: "nav" "carrusel" "presentacion" "reservacion" "footer";
@@ -126,16 +122,16 @@
   height: 50px;
   width: 150px;
   padding: 10px;
-  background-color: var(--color-fondo-boton);
-  color: var(--color-font);
+  background-color: #4b4b4b;
+  color: #fff200;
   text-align: center;
   border: 0ch;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 .boton:hover {
-  background-color: var(--color-font);
-  color: var(--color-fondo-boton);
+  background-color: #fff200;
+  color: #4b4b4b;
   transition: 1s;
 }
 

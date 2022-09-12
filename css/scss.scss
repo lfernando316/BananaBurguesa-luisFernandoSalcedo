@@ -4,10 +4,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-:root{
-    --color-fondo-boton: #4b4b4b;
-    --color-font: #fff200;
-}
+
+/* variables */
+$color-fondo-boton: #4b4b4b;
+$color-font: #fff200;
+
 .container_area{
     display: grid;
     grid-template-areas: 
@@ -146,16 +147,16 @@
     height: 50px;
     width: 150px;
     padding: 10px;
-    background-color: var(--color-fondo-boton);
-    color: var(--color-font);
+    background-color: $color-fondo-boton;
+    color: $color-font;
     text-align: center;
     border: 0ch;
     margin-top: 15px;
     margin-bottom: 15px;
 
     &:hover{
-        background-color: var(--color-font);
-        color: var(--color-fondo-boton);
+        background-color: $color-font;
+        color: $color-fondo-boton;
         transition: 1s;
     }
 }
