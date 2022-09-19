@@ -6,6 +6,11 @@
 }
 
 /* variables */
+.extend, .seccion_menu img {
+  width: 300px;
+  height: 200px;
+}
+
 .container_area {
   display: grid;
   grid-template-areas: "nav" "carrusel" "presentacion" "reservacion" "footer";
@@ -232,8 +237,6 @@
   margin: 20px;
 }
 .seccion_menu img {
-  width: 300px;
-  height: 200px;
   background-color: lightslategray;
   border-radius: 10px;
   border: #4b4b4b solid 2px;

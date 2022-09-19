@@ -9,6 +9,24 @@
 $color-fondo-boton: #4b4b4b;
 $color-font: #fff200;
 
+$botones: (
+    colorFondo:#4b4b4b,
+    colorTexto: #fff200,
+);
+
+.extend{
+    width: 300px;
+    height: 200px;
+}
+
+@mixin btn {
+    width: 50%;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(#4b4b4b, #fff200 );
+        border-radius: 8px;
+    
+}
 .container_area{
     display: grid;
     grid-template-areas: 
@@ -92,11 +110,7 @@ $color-font: #fff200;
     width: auto;
 
     .caja_texto {
-        width: 50%;
-        justify-content: center;
-        text-align: center;
-        background: linear-gradient(#4b4b4b, #fff200 );
-        border-radius: 8px;
+        @include btn()
     }
 
     .caja_texto p{
@@ -147,16 +161,16 @@ $color-font: #fff200;
     height: 50px;
     width: 150px;
     padding: 10px;
-    background-color: $color-fondo-boton;
-    color: $color-font;
+    background-color: map-get($botones , colorFondo );
+    color: map-get($botones, colorTexto );
     text-align: center;
     border: 0ch;
     margin-top: 15px;
     margin-bottom: 15px;
 
     &:hover{
-        background-color: $color-font;
-        color: $color-fondo-boton;
+        background-color: map-get($botones, colorTexto );
+        color: map-get($botones , colorFondo );
         transition: 1s;
     }
 }
@@ -273,8 +287,7 @@ $color-font: #fff200;
     margin: 20px;
 
     img{
-        width: 300px;
-        height: 200px;
+        @extend .extend;
         background-color: lightslategray;
         border-radius: 10px;
         border: #4b4b4b solid 2px;
