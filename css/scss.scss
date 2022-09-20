@@ -15,8 +15,8 @@ $botones: (
 );
 
 .extend{
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 250px;
 }
 
 @mixin btn {
@@ -285,16 +285,35 @@ $botones: (
     height: auto;
     padding: 10px;
     margin: 20px;
-
-    img{
-        @extend .extend;
-        background-color: lightslategray;
+    
+    .card__menu{
+        display: flex;
+        flex-direction: column;
+        border:  #4b4b4b solid 2px;
         border-radius: 10px;
-        border: #4b4b4b solid 2px;
-        margin: 20px 5px;
+        box-shadow: 0px 10px 10px -6px black;
+        img{
+            @extend .extend;
+            margin: 0;
+            border-radius: 10px;
+            z-index: -0;
+        }
+        p{
+            width: 320px;
+            height: auto;
+            padding: 10px;
+            text-align: justify;
+            margin-bottom: 0px;
+        }
+        .card__boton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            padding-top: 0px;
+        }
     }
 }
-
 .container_nosotros{
     display: grid;
     grid-template-areas: 
@@ -391,9 +410,19 @@ $botones: (
     border: 2px solid #2C3A47;
     background-color: lightseagreen;
     height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px -6px black;
+    color: #fff;
+
+    .item__form{
+        display: flex;
+        flex-direction: column;
+        margin: 10px ;
 
 }
 
+}
 .mapa iframe{
     width: 600px;
     height: 450px

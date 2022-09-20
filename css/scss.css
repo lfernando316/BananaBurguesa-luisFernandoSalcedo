@@ -6,9 +6,9 @@
 }
 
 /* variables */
-.extend, .seccion_menu img {
-  width: 300px;
-  height: 200px;
+.extend, .seccion_menu .card__menu img {
+  width: 320px;
+  height: 250px;
 }
 
 .container_area {
@@ -236,11 +236,31 @@
   padding: 10px;
   margin: 20px;
 }
-.seccion_menu img {
-  background-color: lightslategray;
-  border-radius: 10px;
+.seccion_menu .card__menu {
+  display: flex;
+  flex-direction: column;
   border: #4b4b4b solid 2px;
-  margin: 20px 5px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px -6px black;
+}
+.seccion_menu .card__menu img {
+  margin: 0;
+  border-radius: 10px;
+  z-index: 0;
+}
+.seccion_menu .card__menu p {
+  width: 320px;
+  height: auto;
+  padding: 10px;
+  text-align: justify;
+  margin-bottom: 0px;
+}
+.seccion_menu .card__menu .card__boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0px;
 }
 
 .container_nosotros {
@@ -322,6 +342,15 @@
   border: 2px solid #2C3A47;
   background-color: lightseagreen;
   height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px -6px black;
+  color: #fff;
+}
+.formulario .item__form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .mapa iframe {
