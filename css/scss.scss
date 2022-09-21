@@ -187,7 +187,7 @@ $botones: (
    }
 
     .reservacion div{
-        width: auto;
+        max-width: 350px;
         height: auto;
         
         & h2{
@@ -334,6 +334,7 @@ $botones: (
 .contenido_nosotros{
     grid-area: contenido;
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -345,16 +346,19 @@ $botones: (
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    
+        .parrafo_nosotros{
+            max-width: fit-content;
+        }
     }
 
     .seccion_dos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: start;
     margin-top: 0px;
-    width: 500px
+    
     }
 
         iframe{
@@ -366,7 +370,7 @@ $botones: (
 @media (max-width: 576px){
     .seccion_uno{
        
-        p{
+        .parrafo_nosotros{
             margin-top: 10px;
         }
 
@@ -380,8 +384,8 @@ $botones: (
         margin-bottom: 10px;
        
         iframe{
-            width: 400px;
-            height:400px
+            width: 350px;
+            height:350px
         }
     }
 }
@@ -459,6 +463,6 @@ $botones: (
 
 @media (max-width: 576px) {
     .formulario{
-        width: 400px;
+        max-width: 350px;
     }  
 }

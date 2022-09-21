@@ -150,7 +150,7 @@
     margin-bottom: 10px;
   }
   .reservacion div {
-    width: auto;
+    max-width: 350px;
     height: auto;
   }
   .reservacion div h2 {
@@ -279,6 +279,7 @@
 .contenido_nosotros {
   grid-area: contenido;
   display: flex;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -290,15 +291,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
+}
+.contenido_nosotros .seccion_uno .parrafo_nosotros {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .contenido_nosotros .seccion_dos {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: start;
   margin-top: 0px;
-  width: 500px;
 }
 .contenido_nosotros iframe {
   width: 500px;
@@ -306,7 +310,7 @@
 }
 
 @media (max-width: 576px) {
-  .seccion_uno p {
+  .seccion_uno .parrafo_nosotros {
     margin-top: 10px;
   }
   .seccion_uno img {
@@ -318,8 +322,8 @@
     margin-bottom: 10px;
   }
   .seccion_dos iframe {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
 }
 .container_contacto {
@@ -384,6 +388,6 @@
 
 @media (max-width: 576px) {
   .formulario {
-    width: 400px;
+    max-width: 350px;
   }
 }/*# sourceMappingURL=scss.css.map */
