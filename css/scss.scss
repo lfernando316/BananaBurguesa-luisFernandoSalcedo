@@ -76,6 +76,9 @@ $botones: (
     height: 500px;
     width: 100%;
     height: 60%;
+    max-width: 1240px;
+    /* min-height: 100vh; */
+    margin: 0 auto;
 
     .imgcarrusel{
         width: 500px;
@@ -183,6 +186,7 @@ $botones: (
     
         .caja_texto {
             margin-bottom: 10px;
+            width: 350px;
         }
    }
 
@@ -285,6 +289,14 @@ $botones: (
     height: auto;
     padding: 10px;
     margin: 20px;
+
+    .container_cardmenu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
     
     .card__menu{
         display: flex;
