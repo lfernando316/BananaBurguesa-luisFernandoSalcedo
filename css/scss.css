@@ -105,12 +105,6 @@
 }
 
 .reservacion {
-  /*  background: {
-       image: url(../assets/img/reserva.jpg);
-       size: cover;
-       repeat: no-repeat;
-       }
-   height: 400px; */
   grid-area: reservacion;
   margin: 10px;
   width: 100%;

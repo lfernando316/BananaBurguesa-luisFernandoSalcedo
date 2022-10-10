@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 /* variables */
 $color-fondo-boton: #4b4b4b;
 $color-font: #fff200;
@@ -37,7 +36,6 @@ $botones: (
     "footer";
     height: 100vh;
 }
-
 .barnav{
     grid-area: nav;
     background-color: #fff200;
@@ -71,7 +69,6 @@ $botones: (
     color: #4b4b4b;
     }
 }
-
 .carrusel{
     grid-area: carrusel;
     height: 500px;
@@ -100,7 +97,6 @@ $botones: (
     }
 
 }
-
 .presentacion{
     grid-area: presentacion;
     margin: 10px;
@@ -140,16 +136,7 @@ $botones: (
         
     }
 }
-
 .reservacion{
-   /*  background: {
-        image: url(../assets/img/reserva.jpg);
-        size: cover;
-        repeat: no-repeat;
-        }
-    height: 400px; */
-    
-    
     grid-area: reservacion;
     margin: 10px;
     width: 100%;
@@ -177,7 +164,6 @@ $botones: (
         }
     }
 }
-
 .boton{
     border-radius: 10px;
     height: 50px;
@@ -196,7 +182,6 @@ $botones: (
         transition: 1s;
     }
 }
-
 @media (max-width: 576px){
    .presentacion{
         flex-direction: column;
@@ -221,14 +206,10 @@ $botones: (
         }
     }   
 }
-
-
 .footer{
     grid-area: footer;
     height: 50px;
 }
-
-
 .footer_container{
     background-color: #4b4b4b;
     display: flex;
@@ -248,7 +229,6 @@ $botones: (
         margin-left: 40px;
         margin-top: 0px;
         height: 100%;
-
 
         :nth-child(1){
             margin: 5px 10px;
@@ -273,7 +253,6 @@ $botones: (
         }
     }
 }
-
 .footer_contac{
     color: white;
     justify-content: center;
@@ -281,7 +260,6 @@ $botones: (
     font-size: 16px;
     margin-top: 15px;
 }
-
 .footer_copy{
     background-color: #4b4b4b;
     text-align: center;
@@ -292,7 +270,6 @@ $botones: (
     color: white;
     border-top: #fff solid 2px;
 }
-
 .container_menu{
     display: grid;
     grid-template-areas: 
@@ -301,7 +278,6 @@ $botones: (
     "footer";
     height: 100vh;
 }
-
 .seccion_menu{
     grid-area: seccion_menu;
     display: flex;
@@ -357,14 +333,12 @@ $botones: (
     "footer";
     height: 100vh;
 }
-
 .titulo{
     grid-area: titulo;
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-
 .contenido_nosotros{
     grid-area: contenido;
     display: flex;
@@ -425,7 +399,6 @@ $botones: (
         }
     }
 }
-
 .container_contacto{
     display: grid;
     grid-template-areas: 
@@ -435,7 +408,6 @@ $botones: (
     "footer";
     height: 100vh;
 }
-
 .contenido_contacto{
     grid-area: contenidocontacto;
     display: flex;
@@ -461,7 +433,6 @@ $botones: (
         margin: 10px ;
 
 }
-
 }
 .mapa iframe{
     width: 600px;
@@ -478,7 +449,6 @@ $botones: (
         }
     }
 }
-
 .container_reserva{
     display: grid;
     grid-template-areas: 
@@ -487,7 +457,6 @@ $botones: (
     "footer";
     height: 100vh;
 }
-
 .contenidoreserva{
     grid-area: contenidoreserva;
     display: flex;
