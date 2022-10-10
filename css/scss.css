@@ -21,6 +21,7 @@
   grid-area: nav;
   background-color: #fff200;
   padding: 0px;
+  height: 90px;
 }
 .barnav img {
   width: 90px;
@@ -51,7 +52,6 @@
   width: 100%;
   height: 60%;
   max-width: 1240px;
-  /* min-height: 100vh; */
   margin: 0 auto;
 }
 .carrusel .imgcarrusel {
@@ -72,35 +72,45 @@
 
 .presentacion {
   grid-area: presentacion;
-  margin-top: 10px;
+  margin: 10px;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   height: 400px;
-  width: auto;
+  max-width: 1720px;
+  margin: 10px auto;
+  background-color: #b7a89f;
+  border-radius: 10px;
+  border: #4b4b4b solid 2px;
+  overflow: hidden;
 }
 .presentacion .caja_texto {
   width: 50%;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(#4b4b4b, #fff200);
   border-radius: 8px;
 }
 .presentacion .caja_texto p {
   font-size: 26px;
-  color: white;
+  color: #842029;
 }
 .presentacion .caja_img img {
   width: 300px;
   height: 400px;
-  background-color: lightslategray;
-  border-radius: 10px;
-  border: #4b4b4b solid 2px;
+  /*    background-color: lightslategray;
+     border-radius: 10px;
+     border: #4b4b4b solid 2px; */
 }
 
 .reservacion {
+  /*  background: {
+       image: url(../assets/img/reserva.jpg);
+       size: cover;
+       repeat: no-repeat;
+       }
+   height: 400px; */
   grid-area: reservacion;
   margin: 10px;
   width: 100%;
@@ -112,7 +122,7 @@
   background-image: url(../assets/img/reserva.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 600px;
+  width: 800px;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -148,6 +158,7 @@
     flex-direction: column;
     height: auto;
     width: auto;
+    overflow: inherit;
   }
   .presentacion .caja_texto {
     margin-bottom: 10px;
@@ -165,6 +176,7 @@
 }
 .footer {
   grid-area: footer;
+  height: 50px;
 }
 
 .footer_container {
@@ -308,6 +320,7 @@
   max-width: -moz-fit-content;
   max-width: fit-content;
   text-align: justify;
+  margin-top: 10px;
 }
 .contenido_nosotros .seccion_dos {
   display: flex;
